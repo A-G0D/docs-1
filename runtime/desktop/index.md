@@ -1,5 +1,5 @@
 ---
-last_modified: 2026-07-27
+last_modified: 2026-10-28
 title: "Desktop apps"
 description: "Build self-contained desktop applications from a Deno project, with framework auto-detection, hot reload, native windowing, auto-update, and cross-platform distribution."
 ---
@@ -81,8 +81,8 @@ For a complete, real-world app built with `deno desktop`, see
 note-taking app with Markdown notes, `[[wikilink]]` crosslinking, and a
 force-directed graph view. It is deliberately small — a single Deno HTTP server
 plus a vanilla HTML/CSS/JS frontend — and covers window management via
-[`Deno.BrowserWindow`](/api/deno/~/Deno.BrowserWindow), application menus,
-`--hmr` development, and packaging for distribution.
+[`Deno.BrowserWindow`](/runtime/desktop/windows/#creating-windows), application
+menus, `--hmr` development, and packaging for distribution.
 
 ## What's in this section
 
@@ -94,8 +94,8 @@ plus a vanilla HTML/CSS/JS frontend — and covers window management via
 - [Frameworks](/runtime/desktop/frameworks/): Next.js, Astro, Fresh, Remix,
   Nuxt, SvelteKit, and others.
 - [Windows](/runtime/desktop/windows/):
-  [`Deno.BrowserWindow`](/api/deno/~/Deno.BrowserWindow) lifecycle, multiple
-  windows, events.
+  [`Deno.BrowserWindow`](/runtime/desktop/windows/#lifecycle) lifecycle,
+  multiple windows, events.
 - [WebGPU rendering](/runtime/desktop/webgpu/): draw to a native window with
   WebGPU on the raw backend.
 - [Bindings](/runtime/desktop/bindings/): calling Deno code from the webview via
@@ -112,7 +112,7 @@ plus a vanilla HTML/CSS/JS frontend — and covers window management via
 - [DevTools](/runtime/desktop/devtools/): unified DevTools attached to both the
   Deno runtime and the webview.
 - [Auto-update](/runtime/desktop/auto_update/):
-  [`Deno.autoUpdate()`](/api/deno/~/Deno.autoUpdate), manifests, bsdiff,
+  [`Deno.autoUpdate()`](/runtime/desktop/auto_update/), manifests, bsdiff,
   rollback.
 - [Error reporting](/runtime/desktop/error_reporting/): capturing uncaught
   exceptions and panics.
